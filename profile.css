@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+    padding: 5px;
+    padding-bottom: 70px;
+}
+
+/* =============navbar===========  */
+.navbar{
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 2%;
+    background: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.logo{
+    font-family: cursive;
+    font-size: 24px;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.nav-logo{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+/* =================container=================== */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* ==================profile======================= */
+.profile {
+    padding: 16px;
+}
+
+.profile-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* ===== ONLY REQUIRED ADDITION ===== */
+.profile-right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+.nickname{
+    font-size: 20px; /* same scale as your bio */
+    font-weight: 700;
+}
+
+/* ====================follow details=================== */
+.follow-details {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.follow-details b {
+    display: block;
+    font-size: 25px;
+}
+
+.follow-details span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* ===================bio========================= */
+.bio {
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+/* =========================buttons===================== */
+.buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #ccc1c1;
+    font-weight: 700;
+}
+
+/* ==================post feed heading================== */
+.post-feed-heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid #beacac;
+    padding: 12px 0;
+}
+
+.post-feed-heading span {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.post-feed-heading img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* ==================post box================== */
+.post-box {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.post-box img {
+    width: 550px;
+    margin: 20px 0;
+}
+
+.post-box h2 {
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.post-box p {
+    color: #666;
+    font-size: 20px;
+    margin: 8px 0 16px;
+}
+
+.post-box button {
+    background: #5865f2;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+/* ================== bottom navbar ================== */
+.navbar-bottom{
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-logo{
+    height: 35px;
+    width: 35px;
+}
+
+.nav-icons span{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+/* ===================== responsive ===================== */
+@media (max-width: 480px) {
+
+    body {
+        padding: 0;
+        padding-bottom: 70px;
+    }
+
+    /* Navbar */
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-logo {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Profile section */
+    .profile {
+        padding: 12px;
+    }
+
+    .profile-details {
+        gap: 12px;
+    }
+
+    .profile-pic img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nickname {
+        font-size: 14px;
+    }
+
+    /* Follow details */
+    .follow-details b {
+        font-size: 14px;
+    }
+
+    .follow-details span {
+        font-size: 12px;
+    }
+
+    /* Bio */
+    .bio {
+        font-size: 13px;
+    }
+
+    /* Buttons */
+    .buttons button {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    /* Post heading icons */
+    .post-feed-heading img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Post box */
+    .post-box {
+        padding: 30px 15px;
+    }
+
+    .post-box img {
+        width: 70%;
+        max-width: 250px;
+    }
+
+    .post-box h2 {
+        font-size: 16px;
+    }
+
+    .post-box p {
+        font-size: 13px;
+    }
+
+    .post-box button {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    /* Bottom navbar */
+    .navbar-bottom .nav-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-bottom .nav-logo{
+    width: 26px;
+    height: 26px;
+}
+}
+
+/* ===================== LARGE PHONES (6–7 inch) ===================== */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nickname {
+        font-size: 16px;
+    }
+
+    .follow-details b {
+        font-size: 16px;
+    }
+
+    .follow-details span {
+        font-size: 14px;
+    }
+
+    .bio {
+        font-size: 14px;
+    }
+
+    .post-box img {
+        width: 60%;
+        max-width: 350px;
+    }
+
+    .post-box h2 {
+        font-size: 18px;
+    }
+
+    .post-box p {
+        font-size: 15px;
+    }
+
+    .post-box button {
+        font-size: 16px;
+    }
+}
