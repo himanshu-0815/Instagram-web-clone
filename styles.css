@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+/* =============navbar===========  */
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18%;
+    background: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.logo{
+    font-family: Cursive;
+    font-size: 24px;
+}
+
+.navbar input{
+    width: 220px;
+    padding: 6px 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background: #efefef;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.nav-logo{
+    height: 35px;
+    width: 35px;
+}
+
+.nav-icons span{
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ================= STORIES ================= */
+.stories{
+    display: flex;
+    gap: 15px;
+    padding: 15px 18%;
+    background: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.story{
+    text-align: center;
+    font-size: 12px;
+}
+
+.story img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid #e1306c;
+    cursor: pointer;
+}
+
+.story p{
+    margin-top: 5px;
+}
+
+/* ================= FEED ================= */
+.feed{
+    padding: 25px 18%;
+}
+
+.post{
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+/* Post header */
+.post-header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.post-header img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header span{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Post image */
+.post-img{
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Post actions */
+.post-actions{
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Likes & caption */
+.likes{
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.caption{
+    padding: 5px 10px 15px;
+    font-size: 14px;
+}
+
+/* ================== bottom navbar ================== */
+.navbar-bottom{
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-logo{
+    height: 35px;
+    width: 35px;
+}
+
+.nav-icons span{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ================= Media Queries ================= */
+
+/* Medium devices: 600px - 900px (phones, small tablets) */
+@media (min-width: 600px) {
+    .navbar input {
+        width: 180px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .story img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+/* Large devices: 900px - 1200px (tablets, large phones) */
+@media (min-width: 900px) {
+    .navbar {
+        padding: 12px 10%;
+    }
+
+    .navbar input {
+        width: 220px;
+    }
+
+    .stories {
+        padding: 15px 10%;
+    }
+
+    .feed {
+        padding: 20px 10%;
+    }
+}
+
+/* Extra large devices: >1200px (desktop) */
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 12px 18%;
+    }
+
+    .stories {
+        padding: 15px 18%;
+    }
+
+    .feed {
+        padding: 25px 18%;
+    }
+}
