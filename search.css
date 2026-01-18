@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+    padding-bottom: 70px;
+    padding: 5px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 10px 5%;
+    background: #ffffff;
+}
+
+.navbar input{
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 1%;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    background: #efefef;
+}
+/* ================= SEARCH FEED ================= */
+.search-feed{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.post{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.post img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================== BOTTOM NAVBAR ================== */
+.navbar-bottom{
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-logo{
+    height: 35px;
+    width: 35px;
+}
+
+.nav-icons span{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ======================= Responsive ================== */
+/* ========== SMALL PHONES (≤ 360px) ========= */
+@media (max-width: 360px) {
+    .search-feed {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar input {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+/* ========== NORMAL PHONES (361px – 480px) ========= */
+@media (max-width: 480px) {
+    .search-feed {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ========== LARGE PHONES (6 – 7 inch) ========= */
+@media (min-width: 481px) and (max-width: 768px) {
+    .search-feed {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ========== TABLETS & DESKTOP ========= */
+@media (min-width: 769px) {
+    .search-feed {
+        grid-template-columns: repeat(5, 1fr);
+        margin: auto;
+    }
+}
