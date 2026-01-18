@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 10px 5%;
+    background: #ffffff;
+}
+
+.navbar input{
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 1%;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    background: #efefef;
+}
+
+/* ===================search box and add note ================== */
+.notes{
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: flex;
+    gap: 25px;
+    padding: 15px 3%;
+    background: #ffffff;
+}
+
+.note{
+    text-align: center;
+    font-size: 12px;
+}
+
+.note img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid #e1306c;
+    cursor: pointer;
+}
+
+.inbox-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 2%;
+    font-size: 20px;
+}
+
+.inbox-heading h3{
+    color: blue;
+    cursor: pointer;
+}
+
+/* =============== chats box ================ */
+.chat{
+    background: #ffffff;
+}
+
+.chat-profile{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-pic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.chat-detail h3{
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.chat-detail h5{
+    padding: 5px 4px;
+}
+
+.chat-detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.camera-image{
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* ================== bottom navbar ================== */
+.navbar-bottom{
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-logo{
+    height: 35px;
+    width: 35px;
+}
+
+.nav-icons span{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ==========responsive============= */
+
+
+/* Small phones ≤480px */
+
+@media (max-width: 480px) {
+    .navbar {
+        gap: 6px;
+        padding: 8px 12px;
+    }
+
+    .navbar input {
+        width: 100%;
+        padding: 8px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .notes {
+        padding: 10px 12px;
+        gap: 14px;
+    }
+
+    .note {
+        min-width: 60px;
+    }
+
+    .note img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .note p {
+        font-size: 11px;
+    }
+
+    .inbox-heading {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+
+    .chat-profile {
+        padding: 10px 12px;
+    }
+
+    .profile-pic {
+        width: 52px;
+        height: 52px;
+    }
+
+    .chat-detail {
+        margin-left: 12px;
+    }
+
+    .chat-detail h3 {
+        font-size: 16px;
+    }
+
+    .chat-detail h5 {
+        font-size: 12px;
+    }
+
+    .camera-image {
+        width: 28px;
+        height: 28px;
+    }
+
+    .navbar-bottom {
+        padding: 8px 0;
+    }
+
+    .nav-icons {
+        justify-content: space-around;
+    }
+
+    .nav-logo {
+        width: 26px;
+        height: 26px;
+    }
+
+    .nav-icons span {
+        font-size: 22px;
+    }
+}
+
+/* Medium phones 481px - 768px */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar input {
+        width: 90%;
+    }
+
+    .note img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .chat-detail h3 {
+        font-size: 18px;
+    }
+
+    .chat-detail h5 {
+        font-size: 13px;
+    }
+
+    .camera-image {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-logo {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Large phones / small tablets 769px - 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar input {
+        width: 420px;
+    }
+
+    .note img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .profile-pic {
+        width: 65px;
+        height: 65px;
+    }
+
+    .chat-detail h3 {
+        font-size: 20px;
+    }
+
+    .chat-detail h5 {
+        font-size: 14px;
+    }
+
+    .camera-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-logo {
+        width: 32px;
+        height: 32px;
+    }
+}
