@@ -151,5 +151,21 @@ body{
     height: 35px;
     width: 35px;
 }
+/* ===============responsive================= */
+@media (max-width: 480px) {
+    .navbar-bottom {
+        padding: 8px 0;
+    }
+
+    .nav-icons {
+        justify-content: space-around;
+    }
+
+    .nav-icon {
+        width: 26px;
+        height: 26px;
+    }
+}
+
 
 
